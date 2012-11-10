@@ -1,0 +1,6 @@
+nil,nil,length,ends,ruler,title,legend,line
+#0,1,2,3,4,5,6,7
+0,0,1993,1,1,"A.californica Na-Voltage Gate Channel (GI: 325296794)",1,0
+start,stop,color,style,text,text_style,inline,legend
+#0,1,2,3,4,5,6,7
+998,1188,green,square,Na,Name,0,0

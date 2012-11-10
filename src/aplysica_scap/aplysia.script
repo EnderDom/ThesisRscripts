@@ -1,0 +1,58 @@
+# Use hash for comments, although any line with : will not be parsed
+# Don't put hashes at the end of lines starting with :
+#
+# Image type, must be the first script line
+:IMAGE:TRANSCRIPT
+
+# PPI for image just a number nothing else
+:PPI:300
+
+# Height and width in mm
+:WIDTH:150
+:HEIGHT:40
+# Title of the image
+:TITLE:A.californica Na Voltage Gated Channel (GI:325296795)
+
+# Note all position values should be described as either xbp or xaa 
+# Positions labelled CDS: assumes to position is relative to the start of CDS
+# rather than the start of the gene
+
+#Gene length
+:GENE:6396bp
+#CDS length, start and stop if you have CDS: tag in other stuff, make sure this comes first
+:CDS:318bp,6299bp, true
+#UTR true will add 5'UTR tags on image
+:UTR:True
+
+# Regions as follows ->
+# :REGION: Shortname, Longname, start, stop, style, color 
+# style must be 3 words separated by '-' in order as ->
+# style-linespacing-linewidth
+# styles: empty, diag, diagrev, cross, hori, verti, fill
+# linespacing: mid, wide, narrow
+# linewidth: norm, thick, thin
+#
+# You need to specify, even with fill,
+# which just fills the area (but will actually ignore the other values)
+#
+# Colors are rgb(x;x;x)
+#
+:REGION: ION, Ion Transport Domain, CDS:165aa,CDS:298aa,diag-narrow-norm, rgb(30;30;30)
+:REGION: ION, Ion Transport Domain, CDS:354aa,CDS:419aa,diag-narrow-norm, rgb(30;30;30)
+:REGION: UNK, Unknown Function Domain, CDS:477aa,CDS:594aa,cross-mid-thin, rgb(100;100;100)
+:REGION: ION, Ion Transport Domain, CDS:789aa,CDS:964aa,diag-narrow-norm, rgb(30;30;30)
+:REGION: NA-VOLT, Na Transport Associated Domain, CDS:998aa, CDS:1188aa,fill-mid-norm, rgb(120;120;120)
+:REGION: ION, Ion Transport Domain, CDS:1214aa,CDS:1440aa,diag-narrow-norm, rgb(30;30;30)
+:REGION: ION, Ion Transport Domain, CDS:1534aa,CDS:1731aa,diag-narrow-norm, rgb(30;30;30)
+#
+#
+:PRIMER: 5' Na PWN, 909bp, for
+:PRIMER: 5' Na DAWC, 4034bp, for
+:PRIMER: 5' Na WIES, 3146bp, for
+:PRIMER: 3' Na QDF, 1462bp, rev
+:PRIMER: 3' Na YIAVI, 5509bp, rev
+:PRIMER: 3' Na VII, 4645bp, rev
+#
+#
+:ARROW: Size, bp, below
+:ARROW: CDS, aa+bp, above
